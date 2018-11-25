@@ -1,0 +1,41 @@
+:root {
+    --defaultRowNum: 13;
+    --defaultColNum: 13;
+}
+
+.hero-head {
+    position: relative;
+    text-align: center;
+    margin-bottom: 2%;
+}
+.maze_title:after {
+    position: absolute;
+    bottom: 0;
+    border: 2px solid #000000;
+    content: "";
+    width: 70%;
+    left: 15%;
+}
+.maze_title {
+    font-size: 400%;
+}
+.form_container {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-body {
+    justify-content: center;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(var(--defaultColNum), auto);
+}
+
+.player {
+  background-color: red !important;
+}
+.goal {
+  background-color: blue !important;
+}
